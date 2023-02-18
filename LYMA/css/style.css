@@ -6,6 +6,9 @@
    max-width: 1440px;
    margin: 0 auto;
 }
+.content {
+   padding: 0 15px;
+}
 .header-nav,
 .footer-nav {
    display: flex;
@@ -77,16 +80,22 @@
    display: flex;
    margin: 4px 0;
 }
+@media (max-width: 767px) {
+   .block-face {
+      display: block;
+   }
+}
+
 .first-face {
    background: url(../img/first-face.png) center no-repeat;
    background-size: cover;
-   padding: 310px 220px 30px 220px;
+   min-height: 500px;
    flex: 1 1 auto;
 }
 .second-face {
    background: url(../img/laser.png) center no-repeat;
    background-size: cover;
-   padding: 310px 220px 0 220px;
+   min-height: 500px;
    flex: 1 1 auto;
 }
 .first-face,
@@ -98,6 +107,7 @@
    text-align: center;
    margin: 0 auto;
    color: #ffffff;
+   padding-top: 310px;
 }
 .first-face h2,
 .second-face h2 {
@@ -193,4 +203,45 @@ footer {
    color: #d4d4d4;
    font-weight: 500;
    line-height: 120%; /* 12/10 */
+}
+@media (max-width: 980px) {
+   .nav-site,
+   .help-site {
+      display: none;
+   }
+}
+@media (max-width: 980px) {
+   .header-nav,
+   .footer-nav {
+      display: flex;
+      justify-content: center;
+      padding: 25px 0;
+   }
+}
+@media (max-width: 980px) {
+   footer {
+      display: none;
+   }
+}
+@media (max-width: 767px) {
+   .block-face {
+      display: block;
+   }
+}
+@media (max-width: 767px) {
+   .header-nav,
+   .footer-nav {
+      display: none;
+   }
+}
+@media (max-width: 444px) {
+   .better-img {
+      max-width: 250px;
+   }
+}
+@media (max-width: 444px) {
+   .btn {
+      display: flex;
+      flex-direction: column;
+   }
 }
