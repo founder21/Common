@@ -66,12 +66,10 @@ body {
 
 .down-btn {
    max-width: 80px;
-   position: absolute;
-   bottom: 20px;
-   left: 50%;
    font-size: 14px;
    text-align: center;
    text-transform: uppercase;
+   margin: 250px auto 0;
 }
 .down-btn-text {
    font-family: "Open Sans";
@@ -358,6 +356,21 @@ body {
       font-family: "Bebas Neue";
       font-weight: 700;
       font-size: 60px;
+      line-height: 80px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 133px;
+   }
+}
+@media (max-width: 342px) {
+   .down-btn {
+      display: none;
+   }
+   .battle-requirements-main h2 {
+      font-family: "Bebas Neue";
+      font-weight: 700;
+      font-size: 40px;
       line-height: 80px;
       letter-spacing: 3px;
       text-transform: uppercase;
