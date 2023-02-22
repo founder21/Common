@@ -17,7 +17,7 @@ body {
 .about {
    background: url(../img/bg-image.webp) center no-repeat;
    background-size: cover;
-   min-height: 100vh;
+   max-height: 960px;
    color: #ffffff;
 }
 .header {
@@ -28,6 +28,7 @@ body {
 }
 .nav-block {
    display: flex;
+   flex-wrap: wrap;
    border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 .nav-block li {
@@ -37,12 +38,19 @@ body {
    line-height: 133.333333%; /* 16/12 */
    letter-spacing: 0.1em;
    text-transform: uppercase;
-   margin-right: 61px;
+   // margin-right: 61px;
+   padding: 10px 30px;
    align-items: center;
 }
 .nav-block li:hover {
    font-size: 14px;
    color: #d23535;
+}
+.about-block {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 820px;
 }
 
 .about-text {
@@ -53,7 +61,7 @@ body {
    margin: 0 auto;
    text-align: center;
    letter-spacing: 2px;
-   margin-top: 214px;
+   // margin-top: 214px;
 
    &__title {
       display: block;
@@ -69,7 +77,8 @@ body {
    font-size: 14px;
    text-align: center;
    text-transform: uppercase;
-   margin: 250px auto 0;
+   margin: 0 auto;
+   padding-bottom: 25px;
 }
 .down-btn-text {
    font-family: "Open Sans";
@@ -98,6 +107,15 @@ body {
    display: block;
    line-height: 122.222222%; /* 22/18 */
    max-width: 546px;
+}
+.greatest-text-text:after {
+   content: "";
+   display: block;
+   height: 4px;
+   width: 220px;
+   margin-top: 10px;
+   border-radius: 4px;
+   background: #d23535;
 }
 
 .greatest-text h3 {
@@ -162,6 +180,9 @@ body {
    padding-right: 30px;
    font-size: 18px;
    vertical-align: bottom;
+}
+.battle-text-ul li:last-child {
+   margin: 0;
 }
 .battle-text-ul {
    font-family: "Open Sans";
@@ -343,7 +364,6 @@ body {
 }
 
 @media (max-width: 780px) {
-   .nav-block,
    .greatest-img,
    .battle-img,
    .art-of-war-img {
