@@ -73,10 +73,10 @@ body {
 
 .down-btn {
   max-width: 80px;
-   font-size: 14px;
-   text-align: center;
-   text-transform: uppercase;
-   margin: 250px auto 0;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 250px auto 0;
 }
 
 .down-btn-text {
