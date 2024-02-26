@@ -787,8 +787,8 @@ section {
 
 @media (max-width: 47.99875em) {
   .header__container {
-    -ms-grid-columns: 120px 1fr;
-    grid-template-columns: 120px 1fr;
+    -ms-grid-columns: auto 1fr;
+    grid-template-columns: auto 1fr;
   }
 
   .menu {
