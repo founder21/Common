@@ -1,132 +1,1036 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>JS</title>
-</head>
-
-<body>
-  <header>
-    <div class="header__container">
-      <h1>JavaScript</h1>
-    </div>
-  </header>
-  <!-- ---------------------------- -->
-  <main>
-    <a class="link-dz link-dz__noob" href="#">Домашне завдання № 1(Вступ)</a>
-    <hr>
-    <a class="link-dz" href="./lesson-02/lesson2.html">Домашне завдання № 2</a>
-    <hr>
-    <a class="link-dz" href="./lesson-03/lesson3.html">Домашне завдання № 3</a>
-    <hr>
-    <a class="link-dz link-dz__noob" href="#">Домашне завдання № 4 (тести)</a>
-    <hr>
-    <a class="link-dz" href="./lesson-5/lesson5.html">Домашне завдання № 5 (цикли)</a>
-    <hr>
-    <!-- -------------------------------------------------------------------- -->
-  </main>
-  <script>
-    //Поступово вводяться вартості 7 товарів із зазначенням номера товару.Знайти загальну вартість
-
-    // let totalPrice = 0
-    // for (let num = 1; num <= 7; num++) {
-    //   const price = parseInt(prompt(`введіть ціну ${num} товару`))
-    //   totalPrice += price
-    // }
-    // document.write(`Total price  = ${totalPrice}`)
-    //<!-- -------------------------------------------------------------------- -->
-    //З клавіатури поступово вводяться імена 5 учнів. Визначити скільки є імен Іван
-
-    // const nameSearchUser = 'Ivan'
-    // let countIvan = 0
-    // for (let index = 1; index <= 5; index++) {
-    //   pupilName = prompt('Name user?')
-    //   if (pupilName === nameSearchUser) {
-    //     countIvan++
-    //   }
-    // }
-    // document.write(`Name user Ivan  = ${countIvan}`)
-    //<!-- -------------------------------------------------------------------- -->
-    //З клавіатури поступово вводяться імена учнів. Визначити скільки є імен Іван
-    // const nameSearchUser = 'Ivan'
-    // let countIvan = 0
-    // const pupilNumber = parseInt(prompt('Скільки є учнів?'))
-    // for (let index = 1; index <= pupilNumber; index++) {
-    //   pupilName = prompt('Name user?')
-    //   if (pupilName === nameSearchUser) {
-    //     countIvan++
-    //   }
-    // }
-    // document.write(`Name user Ivan  = ${countIvan}`)
-    //<!-- -------------------------------------------------------------------- -->
-    //Реалізувати за допомогою alert таймер відліку від 10 до 1
-
-    // for (let index = 10; index >= 1; index--) {
-    //   alert(index)
-    // }
-    // document.write('Boom!')
-    //<!-- -------------------------------------------------------------------- -->
-    //Задача. 15 разів вивести слово "Hello"
-    // for (let index = 1; index <= 15; index++) {
-    //   document.write('Hello <br>')
-    // }
-    //<!-- -------------------------------------------------------------------- -->
-    //Задача. З клавіатури вводиться 5 пар цілих чисел. Якщо числа рівні, то вивести їх суму, інакше – добуток
-    // for (let parNum = 1; parNum <= 5; parNum++) {
-    //   let firstNum = parseInt(prompt(`введіть перше число з пари ${parNum}`))
-    //   let secondNum = parseInt(prompt(`введіть друге число з пари ${parNum}`))
-    //   if (firstNum === secondNum) {
-    //     document.write(`Sum= ${firstNum + secondNum}<br>`)
-    //   }
-    //   else
-    //     document.write(`DOB= ${firstNum * secondNum}<br>`)
-    // }
-    //<!-- -------------------------------------------------------------------- -->
-    //Задача. З клавіатури 6 разів генерується ціле число в межах від 1 до 10 і кожного разу дається можливість користувачу вгадати число.
-    // for (let i = 1; i <= 6; i++) {
-    //   let generateNum = 1 + Math.floor(Math.random() * 10)
-    //   let userNum = parseInt(prompt("Яке число я загадав?"))
-    //   if (generateNum === userNum) {
-    //     alert('Вітаю ти вгадав число!')
-    //   }
-    //   else
-    //     alert(`Спробуй ще! залишилось спроб`)
-    // }
-    //<!-- -------------------------------------------------------------------- -->
-    //Задача. Вводиться прибуток магазину за 3 тижні
-    //   (для кожного тижня вводиться прибуток за робочі дні 1-5). Знайти загальну суму
-
-    //  загальна сума = 0
-    // для кожного тижня від 1 до 3{
-    //        для кожного дня у тижні від 1 до 5 {
-    //ввести прибуток і додати до загальної суми
-    //       }
-    // }
-    // let totalSum = 0
-    // let totalSumForWeek
-    // let sumForDay
-    // for (let sumWeek = 1; sumWeek <= 3; index++) {
-    //   for (let Days = 1; Days <= 5; Days++) {
-    //     sumForDay = parseInt(prompt(`Яка сумма за ${Days} день?`))
-    //     totalSumForWeek = sumForDay * 5
-    //   }
-    //   document.write(`загальна сума = ${totalSumForWeek * 3}`)
-    // }
-    //<!-- -------------------------------------------------------------------- -->
-    //Задача. Вивести номери місяців другого півріччя (номери місяців від 6 до 12)
-    // for (let index = 6; index <= 12; index++) {
-    //   document.write(`${index} <br>`)
-    // }
-    //<!-- -------------------------------------------------------------------- -->
-    //Задача. Вивести суми сплаченого кредиту. Початковий внесок 5000грн, кінцевий 15000 грн, а щомісячний внесок 2000грн.
-    //<!-- -------------------------------------------------------------------- -->
-
-
-  </script>
-
-</body>
-
+<!doctype html>
+<html lang="ua">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Cab Drivers</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1753029857819"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1753029857819">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<a href="index.html" class="header__logo">
+						<img src="./assets/img/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link" data-fls-scrollto=".our-cars">Наші авто</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link" data-fls-scrollto=".our-advantages">Переваги</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link" data-fls-scrollto=".terms-of-cooperation">Умови співпраці</a>
+								</li>
+							</ul>
+							<div class="menu__phone-block">
+								<a href="tel:+380679616808" class="menu__phone-num">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-phone"></use>
+									</svg>
+									+380679616808
+									<span>(Renault, Hyundai)</span>
+								</a>
+								<a href="tel:+380772278888" class="menu__phone-num">
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-phone"></use>
+									</svg>
+									+380772278888
+									<span>(Tesla)</span>
+								</a>
+							</div>
+							<div class="menu__phone-btn" data-fls-scrollto=".map">
+								<a href="#">Контакти</a>
+							</div>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page page--home">
+				<section class="hero">
+					<div class="hero__container">
+						<div class="hero__body">
+							<h1>Робота в таксі на авто компанії — Київ</h1>
+							<p>Приєднуйтесь до команди водіїв та заробляйте вже сьогодні!</p>
+						</div>
+						<a href="#" data-fls-scrollto=".our-cars__container" class="hero__button">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-arrow"></use>
+							</svg>
+						</a>
+					</div>
+				</section>
+				<section class="our-cars">
+					<div class="our-cars__container">
+						<div data-fls-tabs="" class="tabs">
+							<nav data-fls-tabs-titles="" class="tabs__navigation">
+								<button type="button" class="tabs__title --tab-active">Робота в таксі</button>
+								<button type="button" class="tabs__title">Оренда</button>
+							</nav>
+							<div data-fls-tabs-body="" class="tabs__content">
+								<div class="tabs__body">
+									<h2 class="title-section">Наші авто</h2>
+									<div class="cars-block">
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/car/tesla-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/car/tesla-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/car/tesla.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol.svg" alt="">
+														<span>дизель</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<img alt="" src="./assets/img/car/tesla-3.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol.svg" alt="">
+														<span>дизель</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<img alt="" src="./assets/img/car/kona.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol.svg" alt="">
+														<span>дизель</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<img alt="" src="./assets/img/car/megane.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol.svg" alt="">
+														<span>дизель</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/car/tucson-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/car/tucson-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/car/tucson.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol.svg" alt="">
+														<span>дизель</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/example-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/example-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/example.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol.svg" alt="">
+														<span>дизель</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+											</div>
+										</div>
+										<!--
+-->
+									</div>
+									<section class="our-advantages">
+										<div class="our-advantages__container">
+											<h2 class="title-section">Наші переваги</h2>
+											<div class="our-advantages__content">
+												<div class="our-advantages__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-car-sport"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Комфортні авто</h3>
+														<p>
+															Сучасні електромобілі або економні дизельні авто. Усі машини брендовані та ліцензовані. Обслуговування за наш рахунок.
+														</p>
+													</div>
+												</div>
+												<div class="our-advantages__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-wallet-outline"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Стабільний дохід</h3>
+														<p>
+															Що більше часу Ви проводите за кермом, то більше заробляєте. Коли попит збільшується, водії заробляють ще більше.
+														</p>
+													</div>
+												</div>
+												<div class="our-advantages__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-people-outline"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Прозорі умови — чесна оплата</h3>
+														<p>До 65% доходу залишаються водієві. Все просто й без сюрпризів.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+									<section class="terms-of-cooperation">
+										<div class="terms-of-cooperation__container">
+											<h2 class="title-section">Умови співпраці</h2>
+											<div class="terms-of-cooperation__content">
+												<div class="terms-of-cooperation__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-rocket"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Регулярність</h3>
+														<p>Мінімум — 100 поїздок на тиждень в Uklon</p>
+													</div>
+												</div>
+												<div class="terms-of-cooperation__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-award"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Порядність</h3>
+														<p>Тільки відповідальні, пунктуальні і охайні водії!</p>
+													</div>
+												</div>
+												<div class="terms-of-cooperation__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-people-outline"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Якість обслуговування</h3>
+														<p>
+															Чисте авто, ввічливе спілкування та дотримання стандартів сервісу — обов’язкові умови.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<!-- second tab -->
+								<div class="tabs__body">
+									<h2 class="title-section">Наші авто</h2>
+									<div class="cars-block">
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/hero-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/hero-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/hero.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__option option-about-car">
+													<div class="option-about-car__item">Доступно</div>
+													<div class="option-about-car__item">Є викуп</div>
+												</div>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol-e.svg" alt="">
+														<span>електро</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+												<h3>8000 грн/тиждень*</h3>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/hero-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/hero-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/hero.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__option option-about-car">
+													<div class="option-about-car__item">Доступно</div>
+													<div class="option-about-car__item">Є викуп</div>
+												</div>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol-e.svg" alt="">
+														<span>електро</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+												<h3>8000 грн/тиждень*</h3>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<img src="assets/img/her1o.png" alt="">
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__option option-about-car">
+													<div class="option-about-car__item">Доступно</div>
+													<div class="option-about-car__item">Є викуп</div>
+												</div>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol-e.svg" alt="">
+														<span>електро</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+												<h3>8000 грн/тиждень*</h3>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/hero-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/hero-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/hero.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__option option-about-car">
+													<div class="option-about-car__item">Доступно</div>
+													<div class="option-about-car__item">Є викуп</div>
+												</div>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol-e.svg" alt="">
+														<span>електро</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+												<h3>8000 грн/тиждень*</h3>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/hero-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/hero-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/hero.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__option option-about-car">
+													<div class="option-about-car__item">Доступно</div>
+													<div class="option-about-car__item">Є викуп</div>
+												</div>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol-e.svg" alt="">
+														<span>електро</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+												<h3>8000 грн/тиждень*</h3>
+											</div>
+										</div>
+										<!--
+-->
+										<div class="cars-block__car-item car-item">
+											<div class="car-item__photo">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/hero-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/hero-1200.webp" type="image/webp">
+													<img alt="" src="./assets/img/hero.webp">
+												</picture>
+											</div>
+											<div class="car-item__about-car about-car">
+												<h3>Tesla Model 3</h3>
+												<div class="about-car__option option-about-car">
+													<div class="option-about-car__item">Доступно</div>
+													<div class="option-about-car__item">Є викуп</div>
+												</div>
+												<div class="about-car__setting-car">
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/petrol-e.svg" alt="">
+														<span>електро</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/gearbox.svg" alt="">
+														<span>автомат</span>
+													</div>
+													<div class="about-car__setting-car-item">
+														<img src="./assets/img/icon/dollar.svg" alt="">
+														<span>до 5,5л/100км</span>
+													</div>
+												</div>
+												<div class="about-car__more about-car-more">
+													<h3>Tesla Model 3</h3>
+													<ul class="about-car-more__text-block"></ul>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>КПП:</span>
+														<p>Автомат</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Клас комфорту:</span>
+														<p>Комфорт</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Тип палива:</span>
+														<p>Дизель</p>
+													</li>
+													<li class="about-car-more__item">
+														<span>Витрати:</span>
+														<p>до 5,5л/100км</p>
+													</li>
+												</div>
+												<h3>8000 грн/тиждень*</h3>
+											</div>
+										</div>
+										<!--
+-->
+									</div>
+									<section class="our-advantages">
+										<div class="our-advantages__container">
+											<h2 class="title-section">Наші переваги</h2>
+											<div class="our-advantages__content">
+												<div class="our-advantages__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-car-sport"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Обслуговування за наш рахунок</h3>
+														<p>Ми беремо на себе технічний огляд, страхування та ремонт.</p>
+													</div>
+												</div>
+												<div class="our-advantages__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-wallet-outline"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Без прихованих платежів</h3>
+														<p>
+															Фіксована щотижнева ставка. Усе чітко: жодних «дрібних шрифтів» і неочікуваних витрат.
+														</p>
+													</div>
+												</div>
+												<div class="our-advantages__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-people-outline"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Цілодобова підтримка</h3>
+														<p>Ми завжди на зв’язку: допоможемо при форс-мажорах, ДТП чи технічних питаннях.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+									<section class="terms-of-cooperation">
+										<div class="terms-of-cooperation__container">
+											<h2 class="title-section">Умови співпраці</h2>
+											<div class="terms-of-cooperation__content">
+												<div class="terms-of-cooperation__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-rocket"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Мінімальний термін оренди</h3>
+														<p>
+															Оренда від 12 тижнів. Авто закріплюється за вами на весь період — без замін і перерв.
+														</p>
+													</div>
+												</div>
+												<div class="terms-of-cooperation__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-award"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Досвід та відповідальність</h3>
+														<p>
+															Водій повинен мати дійсне посвідчення категорії B та досвід керування від 2 років.
+														</p>
+													</div>
+												</div>
+												<div class="terms-of-cooperation__card card">
+													<svg>
+														<use xlink:href="./assets/img/spritemap.svg#sprite-people-outline"></use>
+													</svg>
+													<div class="card__text-block">
+														<h3>Охайність і дисципліна</h3>
+														<p>Дбайливе ставлення до авто, дотримання правил ПДР та графіку оплати.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--
+<section class="our-advantages">
+<div class="our-advantages__container">
+<h2 class="title-section">Наші переваги</h2>
+<div class="our-advantages__content">
+<div class="our-advantages__card card">
+<svg>
+<use xlink:href="./assets/img/spritemap.svg#sprite-car-sport"></use>
+</svg>
+<div class="card__text-block">
+<h3>Комфортні авто</h3>
+<p>Сучасні електромобілі або економні дизельні авто. Усі машини брендовані та ліцензовані. Обслуговування за наш рахунок.</p>
+</div>
+</div>
+<div class="our-advantages__card card">
+<svg>
+<use xlink:href="./assets/img/spritemap.svg#sprite-wallet-outline"></use>
+</svg>
+<div class="card__text-block">
+<h3>Стабільний дохід</h3>
+<p>Що більше часу Ви проводите за кермом, то більше заробляєте. Коли попит збільшується, водії заробляють ще більше.</p>
+</div>
+</div>
+<div class="our-advantages__card card">
+<svg>
+<use xlink:href="./assets/img/spritemap.svg#sprite-people-outline"></use>
+</svg>
+<div class="card__text-block">
+<h3>Прозорі умови — чесна оплата</h3>
+<p>До 65% доходу залишаються водієві. Все просто й без сюрпризів.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="terms-of-cooperation">
+<div class="terms-of-cooperation__container">
+<h2 class="title-section">Умови співпраці</h2>
+<div class="terms-of-cooperation__content">
+<div class="terms-of-cooperation__card card">
+<svg>
+<use xlink:href="./assets/img/spritemap.svg#sprite-rocket"></use>
+</svg>
+<div class="card__text-block">
+<h3>Регулярність</h3>
+<p>Мінімум — 100 поїздок на тиждень в Uklon</p>
+</div>
+</div>
+<div class="terms-of-cooperation__card card">
+<svg>
+<use xlink:href="./assets/img/spritemap.svg#sprite-award"></use>
+</svg>
+<div class="card__text-block">
+<h3>Порядність</h3>
+<p>Тільки відповідальні, пунктуальні і охайні водії!</p>
+</div>
+</div>
+<div class="terms-of-cooperation__card card">
+<svg>
+<use xlink:href="./assets/img/spritemap.svg#sprite-people-outline"></use>
+</svg>
+<div class="card__text-block">
+<h3>Якість обслуговування</h3>
+<p>Чисте авто, ввічливе спілкування та дотримання стандартів сервісу — обов’язкові умови.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+-->
+				<section class="map">
+					<div class="map__body">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.5836261151867!2d30.44659207659608!3d50.46747777159543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdcb922d5e4d%3A0x26acdf050249540!2z0LLRg9C70LjRhtGPINCf0YDQsNCy0LXQtNC90LjQutGW0LIsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1752498051731!5m2!1suk!2sua" width="100%" height="700" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<div class="map-info-block">
+							<div class="map-info-block__title-block">
+								<h4>Заїжджайте в гості</h4>
+								<p>Покажемо авто та узгодимо умови</p>
+							</div>
+							<div class="map-info-block__location">
+								<span>
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-geo"></use>
+									</svg>
+									Адреса
+								</span>
+								<p>вул. Праведників, 5</p>
+							</div>
+							<div class="map-info-block__location">
+								<span>
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-clock"></use>
+									</svg>
+									Графік роботи
+								</span>
+								<p>Пн-Пт 09:00-18:00</p>
+							</div>
+							<div class="map-info-block__location">
+								<span>
+									<svg>
+										<use xlink:href="./assets/img/spritemap.svg#sprite-phone"></use>
+									</svg>
+									Номер
+								</span>
+								<a href="tel:+380679616808">+380679616808
+						(Renault, Hyundai)</a>
+								<a href="tel:+380772278888">+380772278888 (Tesla)</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div data-fls-dynamic=".footer__bottom-mobile, 768" class="footer__langs langs">
+							<a href="#" class="langs__active">Ua</a>
+							<a href="#">Ru</a>
+							<a href="#">Eng</a>
+						</div>
+						<div class="footer__logo">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-logo-footer"></use>
+							</svg>
+						</div>
+						<div class="footer__social">
+							<a href="#">
+								<img src="./assets/img/icon/telegram.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="./assets/img/icon/instagram.svg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="footer__bottom-mobile">
+						<span>©2025, All rights reserved.</span>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
